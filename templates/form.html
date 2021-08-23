@@ -1,0 +1,47 @@
+<html>  
+
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  text-align: center;
+  
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.boxed {
+    width:92%;
+    padding:2%;
+    height:150px;
+    font:36px/44px cursive;
+    border:10px double yellowgreen;
+}
+</style>
+
+   <body>
+      <div class="container">
+      <div class="center">  
+      <h1>Translator</h1>  
+      <form action = "http://localhost:5000/dictionary" method = "POST">
+           <label for="Languages">Select Language:</label>
+           <select name="Languges" id="cars">
+            <option value="hi">Hindi</option>
+            <option value="mr">Marathi</option>
+           </select>  
+         <h2><input type = "text" name ="text"/></h2>   
+         <h3><button type="submit">Submit</button></h3>  
+      </form>
+      <b>
+      <div class="boxed">
+      <h4> {{final_result}} </h4>
+      </div>
+      </b>
+      </div>
+      </div>
+   </body>  
+</html>  
